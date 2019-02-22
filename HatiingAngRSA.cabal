@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 3fee787e4fd46865697116318353cdbae267a5da7184e68d6d673748bd8fa074
+
+name:           HatiingAngRSA
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/MidnightSkulker/HatiingAngRSA#readme>
+homepage:       https://github.com/MidnightSkulker/HatiingAngRSA#readme
+bug-reports:    https://github.com/MidnightSkulker/HatiingAngRSA/issues
+author:         Peter White
+maintainer:     desourdesourde@gmail.com
+copyright:      (C) Peter White
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/MidnightSkulker/HatiingAngRSA
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_HatiingAngRSA
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable HatiingAngRSA-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_HatiingAngRSA
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HatiingAngRSA
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite HatiingAngRSA-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_HatiingAngRSA
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HatiingAngRSA
+    , base >=4.7 && <5
+  default-language: Haskell2010

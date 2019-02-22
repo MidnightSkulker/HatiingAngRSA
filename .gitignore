@@ -1,0 +1,6 @@
+ARCHIVE
+outputs
+\#*
+.#*
+.stack-work
+test.out
