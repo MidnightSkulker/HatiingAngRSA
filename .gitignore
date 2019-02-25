@@ -1,6 +1,3 @@
-ARCHIVE
-outputs
-\#*
-.#*
-.stack-work
-test.out
+.stack-work/
+HatiingAngRSA.cabal
+*~
